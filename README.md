@@ -5,7 +5,7 @@ Este programa simula un **sistema de administración de citas médicas** para un
 Permite registrar doctores, pacientes, crear y administrar citas, y restringir el acceso solo a administradores autorizados.  
 Toda la información se guarda en archivos **CSV** dentro de la carpeta `/db`.
 
-##Instalación y configuración
+## Instalación y configuración
 
 ### Requisitos previos
 - **Java JDK 11 o superior** instalado.  
