@@ -1,50 +1,39 @@
 # Clinical Appointment System
 
 ## Descripción
-Este programa simula un **sistema de administración de citas médicas** para un consultorio clínico.  
-Permite registrar doctores, pacientes, crear y administrar citas, y restringir el acceso solo a administradores autorizados.  
+
+Este programa simula un **sistema de administración de citas médicas** para un consultorio clínico.
+
+Permite registrar doctores, pacientes, crear y administrar citas, y restringir el acceso solo a administradores autorizados.
+
 Toda la información se guarda en archivos **CSV** dentro de la carpeta `/db`.
 
 ## Instalación y configuración
 
 ### Requisitos previos
-- **Java JDK 11 o superior** instalado.  
-- **IntelliJ IDEA** o cualquier IDE compatible con Java.  
-- **Git** instalado y configurado.  
+
+- **Java JDK 11 o superior** instalado.
+- **IntelliJ IDEA** o cualquier IDE compatible con Java.
+- **Git** instalado y configurado.
 - **Cuenta en GitHub** con un repositorio creado.
 
 ### Pasos de instalación
-Clona el repositorio.
 
-Abre el proyecto en IntelliJ IDEA.
+1. Clona el repositorio desde GitHub.
+2. Abre el proyecto en IntelliJ IDEA o tu IDE preferido.
+3. Compila el proyecto utilizando JDK 11 o superior.
+4. Ejecuta la clase principal `Main.java`.
+5. El sistema generará automáticamente los archivos de base de datos en la carpeta `/db`.
 
-Compila el proyecto con JDK 11+.
+### Uso del programa
 
-Ejecuta el archivo principal:
-Main.java
+Al iniciar el sistema, se presentará un menú con las siguientes opciones:
 
-El programa generará automáticamente los archivos necesarios en la carpeta /db.
+- **Dar de alta doctores**: Registra nuevos médicos en el sistema incluyendo ID, nombre completo y especialidad.
+- **Dar de alta pacientes**: Registra nuevos pacientes con su identificador único y datos personales.
+- **Crear una cita**: Agenda nuevas citas médicas asignando doctor, paciente, fecha, hora y motivo de la consulta.
+- **Listar citas**: Visualiza todas las citas programadas en el sistema.
+- **Editar o eliminar citas**: Modifica los detalles o cancela citas existentes.
+- **Salir**: Finaliza la ejecución del programa.
 
-Uso del programa
-
-Al iniciar el programa, verás un menú con las siguientes opciones:
-
-Dar de alta doctores
-Permite registrar nuevos doctores con su ID, nombre y especialidad.
-
-Dar de alta pacientes
-Permite registrar nuevos pacientes con su ID y nombre completo.
-
-Crear una cita
-Permite agendar una cita asignando un doctor y un paciente, junto con fecha, hora y motivo.
-
-Listar citas
-Muestra todas las citas registradas en el sistema.
-
-Editar o eliminar citas
-Permite modificar o borrar citas existentes.
-
-Salir
-Finaliza el programa.
-
-Todos los datos se guardan automáticamente en formato CSV.
+**Nota:** Toda la información se almacena automáticamente en archivos CSV dentro del directorio de base de datos.
